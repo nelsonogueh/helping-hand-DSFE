@@ -1,16 +1,22 @@
-// import logo from './logo.svg';s
-import "./App.css";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Container  } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+
+import './App.css'
 
 import Header from "./components/Header/Header";
+import LandingPage from './components/LandingPage/LandingPage';
+
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Header />
-      <header className="App-header">
-        <h2>Welcome to Helping Hand</h2>
-      </header>
-    </div>
+      <LandingPage />
+    </div> 
   );
 }
 
