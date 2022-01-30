@@ -1,0 +1,39 @@
+.menu-nav-item{
+    margin: 0px 5px;
+}
+
+.primary-button{
+    background-color: #0e874c !important;
+    color: #fff;
+    border: 1px solid #0e874c;
+    padding:5px 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.primary-button:hover{
+    background-color: #006836 !important;
+    color: #fff;
+}
+.primary-button-hollow{
+    background-color: #fff !important;
+    color: #0e874c;
+    border: 1px solid #0e874c;
+    padding:5px 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.primary-button-hollow:hover{
+    background-color: #006836 !important;
+    color: #fff;
+}
+
+.header-btn{
+    margin: 20px 20px 20px 0px;
+}
+
+.me-auto {
+    max-height: 160px !important;
+}
+.navbar-main-container{
+    height: 70px;
+}

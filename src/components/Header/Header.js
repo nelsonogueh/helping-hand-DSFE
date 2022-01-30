@@ -1,51 +1,33 @@
-import React, { useState } from "react";
+import React  from "react";
 import {
   Navbar,
   Container,
-  Nav,
-  NavDropdown,
-  FormControl,
-  Form,
-  Button,
+  Nav
 } from "react-bootstrap";
+
+import './Header.css'
+import logo from '../../assets/img/logo.png'
+
 
 const Header = (props) => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="navbar-main-container" bg="light" expand="lg"> 
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#"><img alt="" src={logo} style={{height: '50px'}} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: "100px" }}
             navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+          > 
+            <Nav.Link className="menu-nav-item" href="#action1">HOME</Nav.Link>
+            <Nav.Link className="menu-nav-item" href="#action2">CONTRIBUTE</Nav.Link>
+            <Nav.Link className="menu-nav-item" href="#action2">ABOUT US</Nav.Link>
+            <Nav.Link className="menu-nav-item" href="#action2">FAQs</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <FormControl
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <Nav.Link href="#login" className="header-btn primary-button-hollow">LOGIN</Nav.Link>
+          <Nav.Link href="#login" className="header-btn primary-button">SIGN UP</Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
