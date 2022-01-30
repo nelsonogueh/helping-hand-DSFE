@@ -1,4 +1,48 @@
-.section1-container{
-    /* background-color: crimson; */
-    min-height: 400px;
+.section1-container {
+  /* background-color: crimson; */
+  min-height: 400px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background: url('../../assets/img/bg-ellipse.png') no-repeat;
+  position: relative;
+  background-position: center top;
+  width: 100vw;
+  top: 100px;
+}
+
+.section1-content-container {
+  width: 470px;
+  text-align: center;
+}
+.section1-content-h1 {
+  color: #d8db36;
+  font-weight: 700;
+}
+.section1-content-h1 span {
+  color: #0e874c;
+}
+.section1-content-h2 {
+  font-weight: 700;
+  color: #999998;
+  margin-bottom: 50px;
+}
+
+.section1-primary-button {
+  padding: 8px 70px;
+}
+
+.design-section1 {
+  position: relative;
+  top: 100px;
+  height: 186px;
+  width: 100%;
+  background-image: url('../../assets/img/bg-design.jpg');
+  z-index: 100;
+}
+
+.design-img1 {
+  background-repeat: repeat-x;
 }
