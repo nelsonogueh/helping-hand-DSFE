@@ -36,4 +36,5 @@
 }
 .navbar-main-container {
   height: 70px;
+  z-index: 999;
 }

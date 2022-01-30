@@ -6,7 +6,12 @@ import logo from '../../assets/img/logo.png'
 
 const Header = (props) => {
   return (
-    <Navbar className="navbar-main-container sticky" bg="light" expand="lg">
+    <Navbar
+      sticky="top"
+      className="navbar-main-container"
+      bg="light"
+      expand="lg"
+    >
       <Container fluid>
         <Navbar.Brand href="#">
           <img alt="" src={logo} style={{ height: '50px' }} />
