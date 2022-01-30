@@ -6,7 +6,7 @@ import donation from '../../assets/img/donation.png'
 import fruit from '../../assets/img/fruit.png'
 import logoWhite from '../../assets/img/logo-white.png'
 
-const LandingPage = (props) => {
+const Footer = (props) => {
   return (
     <div>
       <Container fluid>
@@ -193,4 +193,4 @@ const LandingPage = (props) => {
   )
 }
 
-export default LandingPage
+export default Footer
