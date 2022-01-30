@@ -2,11 +2,9 @@ import React from 'react'
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 
 import './LandingPage.css'
-import bgDesign from '../../assets/img/bg-design.jpg'
-import bgDesignSmall from '../../assets/img/bg-design-small.png'
 import donation from '../../assets/img/donation.png'
 import fruit from '../../assets/img/fruit.png'
-import bgEllipse from '../../assets/img/bg-ellipse.png'
+import logoWhite from '../../assets/img/logo-white.png'
 
 const LandingPage = (props) => {
   return (
@@ -92,6 +90,28 @@ const LandingPage = (props) => {
                 <img className="section-4-donation-img" src={fruit} />
               </div>
             </section>
+          </Col>
+        </Row>
+      </Container>
+      <section className="design-section4"></section>
+      <Container className="newsletter-section" fluid>
+        <Row>
+          <Col>
+            <div className="newsletter-content-container">
+              <div className="footer-logo-container">
+                <img className="footer-logo" src={logoWhite} />
+              </div>
+              <div className="footer-input-container">
+                <input
+                  className="newsletter-input"
+                  type="email"
+                  placeholder="Enter your email..."
+                />
+              </div>
+              <div className="newsletter-button-container">
+                <button className="newsletter-button">SUBMIT</button>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
