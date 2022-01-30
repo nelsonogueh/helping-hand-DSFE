@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     <Navbar
       sticky="top"
-      className="navbar-main-container"
+      className="navbar-main-container navbar-background"
       bg="light"
       expand="lg"
     >

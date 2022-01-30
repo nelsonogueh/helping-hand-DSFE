@@ -1,5 +1,4 @@
 .section1-container {
-  /* background-color: crimson; */
   min-height: 400px;
   display: flex;
   width: 100%;
@@ -15,9 +14,10 @@
 }
 
 .section1-content-container {
-  width: 470px;
+  width: 100%;
   text-align: center;
 }
+
 .section1-content-h1 {
   color: #d8db36;
   font-weight: 700;
@@ -37,7 +37,6 @@
 
 .design-section1 {
   position: relative;
-
   height: 186px;
   width: 100%;
   background-image: url('../../assets/img/bg-design.jpg');
@@ -64,47 +63,114 @@
   font-size: 36px;
 }
 
-.section3-container {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  padding: 150px 50px;
-  width: 100%;
-  justify-content: center;
-  margin-bottom: 100px;
-  background-color: #f9f9f9;
-  height: 700px;
-}
-
-.section3-container-left {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-3-donation-img {
-  max-height: 450px;
-}
-
-.section3-container-right {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+.buttom-margin {
+  margin-bottom: 40px;
 }
 .section-paragraph {
   color: #999998;
 }
 
-.buttom-margin {
+.section3-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+.section-3-donation-img {
+  height: 400px;
+}
+.section3-container {
+  background-color: #f9f9f9;
+}
+
+.section4-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+.section-4-donation-img {
+  height: 400px;
   margin-bottom: 40px;
+}
+.section4-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* RE-ORDER ON SMALLER DEVICES */
+.section4-container :nth-child(1) {
+  order: 2;
+}
+.section4-container :nth-child(2) {
+  order: 1;
+}
+
+/* RESPONSIVENESS -  FOR TABLET DEVICES */
+@media (min-width: 641px) {
+  /* TABLET */
+  .section1-content-container {
+    width: 470px;
+    text-align: center;
+  }
+
+  /* SECTION 3 */
+  .section-3-donation-img {
+    height: 500px;
+  }
+
+  .section3-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .section3-container-left {
+    width: 50%;
+    flex-grow: 1;
+  }
+  .section3-container-right {
+    width: 50%;
+    flex-grow: 1;
+    text-align: justify;
+    padding-right: 40px;
+  }
+
+  /* SECTION 4 */
+  .section-4-donation-img {
+    height: 500px;
+  }
+
+  .section4-container-main {
+    /* background-color: #0e874c; */
+  }
+
+  .section4-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  /* RE-ORDER FLEX ITEMS ON LARGER DEVICES */
+  .section4-container :nth-child(1) {
+    order: 1 !important;
+  }
+  .section4-container :nth-child(2) {
+    order: 2 !important;
+  }
+
+  .section4-container-left {
+    width: 50%;
+    flex-grow: 1;
+    text-align: justify;
+    /* padding-left: 50px; */
+  }
+  .section4-container-right {
+    width: 50%;
+    flex-grow: 1;
+    padding-right: 30px;
+  }
 }
