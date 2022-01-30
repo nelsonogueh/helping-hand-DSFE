@@ -50,6 +50,23 @@ const LandingPage = (props) => {
           </button>
         </div>
       </section>
+      <section className="section3-container">
+        <div className="section3-container-left">
+          <h1 className="main-title color-primary ">You need something?</h1>
+          <h1 className="sub-title buttom-margin">Your need is right here</h1>
+          <p className="section-paragraph buttom-margin">
+            Helping Hand is very keen on ensuring the needy have access to what
+            they need. We have created a bridge between people useful items and
+            those without.
+          </p>
+          <button className="primary-button section1-primary-button">
+            DONATE
+          </button>
+        </div>
+        <div className="section3-container-right">
+          <img className="section-3-donation-img" src={donation} />
+        </div>
+      </section>
     </div>
   )
 }
