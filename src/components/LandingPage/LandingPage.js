@@ -55,9 +55,11 @@ const LandingPage = (props) => {
                 <p className="section-paragraph buttom-margin">
                   To get started, click the button below
                 </p>
-                <button className="primary-button section1-primary-button">
-                  DONATE
-                </button>
+                <a href="/donate">
+                  <button className="primary-button section1-primary-button">
+                    DONATE
+                  </button>
+                </a>
               </div>
             </section>
           </Col>
