@@ -1,0 +1,56 @@
+/* SECTION - ADD DONATION  */
+
+.donate-section-add-donations {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  padding-top: 30px;
+}
+.donate-add-donation-btn {
+  /* font-weight: bold; */
+}
+.donate-add-donation-btn a {
+  color: #0e874c !important;
+  text-decoration: none;
+}
+.donate-add-donation-btn span {
+  color: white !important;
+  background-color: #0e874c;
+  border-radius: 50px;
+  padding: 0px 5px 1px;
+  text-decoration: none;
+}
+.donate-title-h1 {
+  color: #0e874c;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.donate-hr {
+  color: #a0a0a0;
+}
+
+/* RESPONSIVE - TABLET - PC  */
+@media (min-width: 641px) {
+  .donate-section-add-donations {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .donate-add-donation-btn {
+    display: flex;
+    /* width: 300px; */
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* background-color: aquamarine; */
+  }
+  .donate-title-paragraph {
+    margin: 0px !important;
+    width: 800px;
+    color: #878787;
+  }
+  .donation-main-container {
+    padding: 50px;
+  }
+}
