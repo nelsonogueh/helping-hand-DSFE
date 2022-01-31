@@ -1,21 +1,36 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-
-import { Container } from 'react-bootstrap'
-import { Row } from 'react-bootstrap'
-import { Col } from 'react-bootstrap'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import './App.css'
 
-import Header from './components/Header/Header'
 import LandingPage from './components/LandingPage/LandingPage'
-import Footer from './components/Footer/Footer'
+// import Donation from './components/Donation/Donation'
+import ContainerUnsigned from './components/container/unsigned/ContainerUnsigned'
+import Donation from './components/Donation/Donation'
 
 function App() {
   return (
     <div className="app-container">
-      <Header />
-      <LandingPage />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route
+            path=""
+            element={
+              <ContainerUnsigned>
+                <LandingPage />
+              </ContainerUnsigned>
+            }
+          />
+          <Route
+            path="/donation"
+            element={
+              <ContainerUnsigned>
+                <Donation />
+              </ContainerUnsigned>
+            }
+          />
+        </Routes>
+      </Router>
     </div>
   )
 }

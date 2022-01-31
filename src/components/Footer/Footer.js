@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 import './Footer.css'
 import donation from '../../assets/img/donation.png'
@@ -39,19 +40,19 @@ const Footer = (props) => {
                 <h1>About Us</h1>
                 <ul>
                   <li>
-                    <a href="#">About Helping Hands</a>
+                    <Link to="#">About Helping Hands</Link>
                   </li>
                   <li>
-                    <a href="#">Donations</a>
+                    <Link to="/donation">Donations</Link>
                   </li>
                   <li>
-                    <a href="#">Terms & Conditions</a>
+                    <Link to="#">Terms & Conditions</Link>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <Link to="#">Privacy Policy</Link>
                   </li>
                   <li>
-                    <a href="#">Cookie Policy</a>
+                    <Link to="#">Cookie Policy</Link>
                   </li>
                 </ul>
               </div>
