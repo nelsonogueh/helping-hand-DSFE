@@ -8,6 +8,7 @@ import LandingPage from './components/LandingPage/LandingPage'
 import ContainerUnsigned from './components/container/unsigned/ContainerUnsigned'
 import Donation from './components/Donation/Donation'
 import SideBar from './components/signed-in/Sidebar/SideBar'
+import ContainerSigned from './components/container/signed/ContainerSigned'
 
 function App() {
   return (
@@ -36,6 +37,14 @@ function App() {
               <ContainerUnsigned>
                 <Donation />
               </ContainerUnsigned>
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <ContainerSigned>
+                <Donation />
+              </ContainerSigned>
             }
           />
           <Route path="/sidebar" element={<SideBar />} />
