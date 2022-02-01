@@ -1,4 +1,9 @@
-.app-container{
+.app-container {
   /* background-color: rgb(209, 209, 209); */
   height: 100vh;
+}
+
+.row > * {
+  padding-left: 0px;
+  padding-right: 0px;
 }
