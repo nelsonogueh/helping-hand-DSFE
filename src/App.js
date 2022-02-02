@@ -56,7 +56,6 @@ function App() {
               </SigninContainer>
             }
           />
-          <Route path="/sidebar" element={<SideBar />} />
         </Routes>
       </Router>
     </div>

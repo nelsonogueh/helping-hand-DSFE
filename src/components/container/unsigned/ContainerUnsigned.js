@@ -6,7 +6,7 @@ import Footer from '../../Footer/Footer'
 
 const ContainerUnsigned = (props) => {
   return (
-    <div>
+    <div className='unsigned-container'>
       <Header />
       {props.children}
       <Footer />

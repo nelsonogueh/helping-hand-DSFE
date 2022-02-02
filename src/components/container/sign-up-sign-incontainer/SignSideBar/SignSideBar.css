@@ -32,6 +32,10 @@
 .signin-signup-text a {
   color: #0e874c;
   font-weight: 600;
+  text-decoration: none;
+}
+.signin-signup-text a:hover {
+  text-decoration: underline;
 }
 .signin-button {
   background-color: #0e874c;
@@ -84,6 +88,11 @@
   text-decoration: none;
 }
 .signin-forgot-password-container {
+  margin-bottom: 20px;
+}
+
+.signin-logo-img {
+  max-height: 50px;
   margin-bottom: 20px;
 }
 
