@@ -1,6 +1,6 @@
 /* SIDEBAR MAIN CONTAINER */
 .sidebar-container {
-  max-width: 300px;
+  width: 290px;
 }
 .sidebar-logo-container {
   background-color: #0e874c;
@@ -13,7 +13,7 @@
 .sidebar-menu-item-container {
   padding: 30px;
   border: 2px solid #0e874c;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
 }
 .sidebar-ul {
   padding: 0px;
@@ -35,4 +35,11 @@
   color: #fff;
   background-color: #0e874c;
   transition: 0.3s ease-in-out;
+}
+
+/* RESPONSIVE - TABLET - PC  */
+@media (min-width: 641px) {
+  .sidebar-container {
+    width: 330px;
+  }
 }
