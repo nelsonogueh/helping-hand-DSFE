@@ -21,9 +21,11 @@ const LandingPage = (props) => {
                 <h1 className="section1-content-h2">
                   Request for it and it shall be given to you{' '}
                 </h1>
-                <button className="primary-button section1-primary-button ">
-                  REQUEST{' '}
-                </button>
+                <a href="/login">
+                  <button className="primary-button section1-primary-button ">
+                    REQUEST{' '}
+                  </button>
+                </a>
               </div>
             </section>
           </Col>
@@ -84,9 +86,11 @@ const LandingPage = (props) => {
                 <p className="section-paragraph buttom-margin">
                   If you are in need of certain goods, click the button below.
                 </p>
-                <button className="primary-button section1-primary-button">
-                  REQUEST
-                </button>
+                <a href="/login">
+                  <button className="primary-button section1-primary-button">
+                    REQUEST
+                  </button>
+                </a>
               </div>
               <div className="section4-container-right">
                 <img className="section-4-donation-img" src={fruit} />
