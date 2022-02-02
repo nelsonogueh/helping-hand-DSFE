@@ -5,6 +5,10 @@
   margin: 0px 5px;
 }
 
+.navbar-main-container {
+  background-color: white;
+  box-shadow: 1px 7px 5px #aaaaaa;
+}
 .primary-button {
   background-color: #0e874c !important;
   color: #fff;

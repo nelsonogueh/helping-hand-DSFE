@@ -13,6 +13,7 @@ import signinImage2 from '../../../../assets/img/login-img2.jpg'
 import signinDesignImg from '../../../../assets/img/designimage.png'
 import googleSigninImage from '../../../../assets/img/signin-google.png'
 import outlookSigninImage from '../../../../assets/img/signin-outlook.png'
+import logoGreen from '../../../../assets/img/logo.png'
 
 const SignSideBar = (props) => {
   const iconSize = 25
@@ -24,6 +25,12 @@ const SignSideBar = (props) => {
           <img src={signinImage2} alt="" className="signin-sidebar-img" />
         </div>
         <div className="signin-main-content-container">
+          <div>
+            <a href="/">
+              <img src={logoGreen} alt="" className="signin-logo-img" />{' '}
+            </a>
+          </div>
+
           <div className="signin-title-container">
             <h1 className="signin-login-h1">Login</h1>
             <div className="signin-signup-text">
@@ -90,7 +97,9 @@ const SignSideBar = (props) => {
                 </div>
                 <div>
                   <button className="signin-button">
-                    <Link className='signin-form-link' to="/dashboard">LOGIN</Link>
+                    <Link className="signin-form-link" to="/dashboard">
+                      LOGIN
+                    </Link>
                   </button>
                 </div>
               </div>
@@ -99,6 +108,7 @@ const SignSideBar = (props) => {
                 <div className="signin-or">
                   <span>OR</span>
                 </div>
+
                 <div className="signin-google">
                   LOGIN WITH &nbsp; <img src={googleSigninImage} />
                 </div>

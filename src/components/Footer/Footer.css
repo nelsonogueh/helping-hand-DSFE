@@ -76,6 +76,10 @@
   color: #fff;
   text-decoration: none;
 }
+.sub-footer-menu-container > ul > li a:hover {
+  /* color: #eef169; */
+  text-decoration: underline;
+}
 
 /* FOOTER */
 .footer {
