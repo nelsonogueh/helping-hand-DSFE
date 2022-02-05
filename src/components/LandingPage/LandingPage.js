@@ -16,14 +16,19 @@ const LandingPage = (props) => {
             <section className="section1-container">
               <div className="section1-content-container">
                 <h1 className="section1-content-h1">
-                  What are you in <span>NEED</span> of?
+                  What do you <span>NEED?</span>
                 </h1>
                 <h1 className="section1-content-h2">
-                  Request for it and it shall be given to you{' '}
+                  There is a helping hand reaching out to you today{' '}
                 </h1>
                 <a href="/login">
                   <button className="primary-button section1-primary-button ">
                     REQUEST{' '}
+                  </button>
+                </a>
+                <a href="#">
+                  <button className="secondary-button section1-primary-button ">
+                    LEARN MORE{' '}
                   </button>
                 </a>
               </div>

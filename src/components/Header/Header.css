@@ -7,7 +7,7 @@
 
 .navbar-main-container {
   background-color: white;
-  box-shadow: 1px 7px 5px #aaaaaa;
+  box-shadow: 1px 2px 5px #aaaaaa;
 }
 .primary-button {
   background-color: #0e874c !important;
@@ -45,4 +45,11 @@
   height: 70px;
   z-index: 999;
   background-color: white !important;
+}
+
+@media only screen and (min-width: 641px) {
+  .navbar-main-container {
+    background-color: white;
+    box-shadow: 1px 7px 5px #aaaaaa;
+  }
 }
