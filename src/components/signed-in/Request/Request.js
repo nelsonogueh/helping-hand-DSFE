@@ -4,6 +4,7 @@ import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 import './Request.css'
 import food from '../../../assets/img/food-img.jpg'
 import clothes from '../../../assets/img/clothes-img.jpg'
+import veges from '../../../assets/img/veges.png'
 
 const Request = (props) => {
   return (
@@ -24,7 +25,82 @@ const Request = (props) => {
                   />
                 </div>
               </div>
-              <div className="request-category-container"></div>
+              <ul className="request-filter-buttons-container">
+                <li className="request-filter-button request-filter-button-active">
+                  Food
+                </li>
+                <li className="request-filter-button">Shoes</li>
+                <li className="request-filter-button">Bags</li>
+                <li className="request-filter-button">Gadgets</li>
+                <li className="request-filter-button">Clothes</li>
+                <li className="request-filter-button">Home Appliances</li>
+              </ul>
+              <div className="request-category-container">
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item request-item-first-child">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+              </div>
             </div>
           </Col>
         </Row>
