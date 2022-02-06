@@ -7,7 +7,7 @@ import clothes from '../../../assets/img/clothes-img.jpg'
 import shoes from '../../../assets/img/shoes-img.jpg'
 import others from '../../../assets/img/others-img.jpg'
 
-const Blank = (props) => {
+const Dashboard = (props) => {
   return (
     <div>
       <Container fluid className="content-main-container">
@@ -45,15 +45,15 @@ const Blank = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="dashabord-top-donated-search-container">
-                <div className="dashabord-top-donated-items-text">
+              <div className="dashboard-top-donated-search-container">
+                <div className="dashboard-top-donated-items-text">
                   <div>Top Donated Items</div>
                 </div>
-                <div className="dashabord-top-donated-search-container">
+                <div className="dashboard-top-donated-search-container">
                   <input
                     type="search"
                     placeholder="Search items here..."
-                    className="dashabord-top-donated-search-input"
+                    className="dashboard-top-donated-search-input"
                   />
                 </div>
               </div>
@@ -100,4 +100,4 @@ const Blank = (props) => {
   )
 }
 
-export default Blank
+export default Dashboard
