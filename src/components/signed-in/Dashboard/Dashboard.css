@@ -23,7 +23,7 @@
   border: 1px solid #d8db36;
   box-sizing: border-box;
   border-radius: 20px;
-  padding: 8px 12px;
+  padding: 5px 12px;
   font-size: 16px;
   line-height: 27px;
   color: #0e874c;
@@ -53,6 +53,48 @@
   width: 160px;
   height: 0px;
   border: 1px solid #d3d3d3;
+}
+.dashabord-top-donated-search-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 20px 0px;
+}
+.dashabord-top-donated-items-text {
+  flex-grow: 1;
+  color: #0e874c;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+.dashabord-top-donated-search-container {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.dashabord-top-donated-search-input {
+  background: #f5fffa;
+  border: 1px solid #0e874c;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.dashboard-category-img {
+  margin: 10px;
+  width: 350px;
+  min-width: 350px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.dashboard-category-title-text {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  clear: both;
+  top: -45px;
+  left: 25px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 /* RESPONSIVE - TABLET - PC  */
@@ -86,5 +128,37 @@
     font-weight: 600;
     color: #d8db36;
     margin-bottom: 20px;
+  }
+
+  /* WORK */
+  .dashabord-top-donated-search-container {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    padding: 12px 0px;
+  }
+  .dashboard-img-row-container {
+    display: flex;
+    flex-direction: row;
+    /* margin: 15px; */
+    justify-content: center;
+  }
+  .dashboard-category-img {
+    margin: 10px;
+    width: 450px;
+    min-width: 400px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .dashboard-category-title-text {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+    clear: both;
+    top: -69px;
+    left: 45px;
+    box-sizing: border-box;
+    cursor: pointer;
   }
 }
