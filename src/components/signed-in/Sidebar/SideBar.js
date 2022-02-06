@@ -13,6 +13,17 @@ import logoWhite from '../../../assets/img/logo-white.png'
 
 const SideBar = (props) => {
   const iconSize = 25
+
+  // console.log(window.location.pathname) /dashboard
+  // switch (window.location.pathname) {
+  //   case "/dashboard":
+  //     document.getElementById('').classList.toggle()
+  //     break;
+
+  //   default:
+  //     break;
+  // }
+
   return (
     <div>
       <Container fluid>
@@ -25,10 +36,17 @@ const SideBar = (props) => {
               </div>
               <div className="sidebar-menu-item-container">
                 <ul className="sidebar-ul">
-                  <li as Link to="/dashboard" className="sidebar-menu-item">
+                  <li
+                    as
+                    Link
+                    to="/dashboard"
+                    id="link-dashboard"
+                    className="sidebar-menu-item"
+                  >
                     <MdDashboard size={iconSize} /> Dashboard
                   </li>
                   <li
+                    id="link-request"
                     as
                     Link
                     to="/requests"
@@ -36,13 +54,31 @@ const SideBar = (props) => {
                   >
                     <FiSend size={iconSize} /> Request
                   </li>
-                  <li as Link to="/donations" className="sidebar-menu-item">
+                  <li
+                    as
+                    Link
+                    to="/donations"
+                    id="link-donation"
+                    className="sidebar-menu-item"
+                  >
                     <BiDonateHeart size={iconSize} /> Donations
                   </li>
-                  <li as Link to="/raffledraw" className="sidebar-menu-item">
+                  <li
+                    as
+                    Link
+                    to="/raffledraw"
+                    id="link-raffledraw"
+                    className="sidebar-menu-item"
+                  >
                     <IoTicketOutline size={iconSize} /> Raffle Draw
                   </li>
-                  <li as Link to="/support" className="sidebar-menu-item">
+                  <li
+                    as
+                    Link
+                    to="/support"
+                    id="link-support"
+                    className="sidebar-menu-item"
+                  >
                     <BiSupport size={iconSize} /> Support
                   </li>
                 </ul>

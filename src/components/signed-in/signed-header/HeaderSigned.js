@@ -14,24 +14,28 @@ import logoWhite from '../../../assets/img/logo-white.png'
 
 const HeaderSigned = (props) => {
   const iconSize = 25
+  const toggleSidebar = (e) => {
+    // let sidebarComponent = document.getElementsByClassName(
+    //   'signed-sidebar-component',
+    // )
+    // console.log(sidebarComponent)
+  }
   return (
-    <div>
-      <Container fluid>
-        <Row>
-          <Col>
-            <div>
-              <VscThreeBars size={iconSize} />
-              <div>DASHBOARD</div>
-            </div>
-            <div>
-              <ImCart size={iconSize} />
-              <IoNotificationsSharp size={iconSize} />
-              <FaRegUserCircle size={iconSize} />
-              <AiOutlineCaretDown size={14} />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+    <div className="signed-header-container">
+      <div className="signed-dashboard-toggle-icon-container">
+        <VscThreeBars
+          className="signed-toggle-icon"
+          onClick={toggleSidebar}
+          size={iconSize}
+        />
+        <div>DASHBOARD</div>
+      </div>
+      <div className="signed-profile-icon-container">
+        <ImCart className="signed-header-icon" size={iconSize} />
+        <IoNotificationsSharp className="signed-header-icon" size={iconSize} />
+        <FaRegUserCircle className="signed-header-icon-3" size={iconSize} />
+        <AiOutlineCaretDown className='signed-header-icon-caret' size={14} />
+      </div>
     </div>
   )
 }
