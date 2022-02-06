@@ -10,7 +10,9 @@ import Donation from './components/Donation/Donation'
 import ContainerSigned from './components/container/signed/ContainerSigned'
 import SignedDonation from './components/signed-in/SignedDonation/SignedDonation'
 import Dashboard from './components/signed-in/Dashboard/Dashboard'
-import SignSideBar from './components/container/sign-up-sign-incontainer/SignSideBar/SignSideBar'
+import SigninContainer from './components/container/sign-up-sign-incontainer/SigninContainer'
+import SignIn from './components/SignIn/SignIn'
+// import SignSideBar from './components/container/sign-up-sign-incontainer/SignSideBar/SignSideBar'
 
 // import SignInContent from './components/container/SignInContent/SignInContent'
 // import SignSideBar from './components/container/sign-up-sign-incontainer/SignSideBar/SignSideBar'
@@ -61,15 +63,15 @@ function App() {
             }
           />
 
-          <Route path="/login" element={<SignSideBar />} />
-          {/* <Route
+          {/* <Route path="/login" element={<SignSideBar />} /> */}
+          <Route
             path="/login"
             element={
               <SigninContainer>
-                <SignInContent />
+                <SignIn />
               </SigninContainer>
             }
-          /> */}
+          />
         </Routes>
       </Router>
     </div>
