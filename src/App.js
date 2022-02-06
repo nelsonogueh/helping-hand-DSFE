@@ -4,12 +4,19 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import LandingPage from './components/LandingPage/LandingPage'
-// import Donation from './components/Donation/Donation'
 import ContainerUnsigned from './components/container/unsigned/ContainerUnsigned'
 import Donation from './components/Donation/Donation'
-import SideBar from './components/signed-in/Sidebar/SideBar'
+// import SideBar from './components/signed-in/Sidebar/SideBar'
 import ContainerSigned from './components/container/signed/ContainerSigned'
+import SignedDonation from './components/signed-in/SignedDonation/SignedDonation'
+import Dashboard from './components/signed-in/Dashboard/Dashboard'
 import SigninContainer from './components/container/sign-up-sign-incontainer/SigninContainer'
+import SignIn from './components/SignIn/SignIn'
+import Blank from './components/signed-in/Blank/Blank'
+// import SignSideBar from './components/container/sign-up-sign-incontainer/SignSideBar/SignSideBar'
+
+// import SignInContent from './components/container/SignInContent/SignInContent'
+// import SignSideBar from './components/container/sign-up-sign-incontainer/SignSideBar/SignSideBar'
 
 function App() {
   return (
@@ -41,22 +48,39 @@ function App() {
             }
           />
           <Route
+            path="/login"
+            element={
+              <SigninContainer>
+                <SignIn />
+              </SigninContainer>
+            }
+          />
+          <Route
             path="/dashboard"
             element={
               <ContainerSigned>
-                <Donation />
+                <Dashboard />
               </ContainerSigned>
             }
           />
           <Route
-            path="/login"
+            path="/donation"
             element={
-              <SigninContainer>
-                <div></div>
-              </SigninContainer>
+              <ContainerSigned>
+                <SignedDonation />
+              </ContainerSigned>
             }
           />
-          <Route path="/sidebar" element={<SideBar />} />
+          {/* BLANK COMPONENT AS A TEMPLATE FOR CREATING SIGNED IN COMPONENTS */}
+          {/* BLANK COMPONENT AS A TEMPLATE FOR CREATING SIGNED IN COMPONENTS */}
+          <Route
+            path="/blank"
+            element={
+              <ContainerSigned>
+                <Blank />
+              </ContainerSigned>
+            }
+          />
         </Routes>
       </Router>
     </div>

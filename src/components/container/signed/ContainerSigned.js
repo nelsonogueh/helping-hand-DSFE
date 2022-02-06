@@ -8,8 +8,10 @@ const ContainerSigned = (props) => {
   return (
     <div className="signed-in-container">
       <SideBar />
-      <HeaderSigned />
-      {props.children}
+      <div className='signed-container-main-section'>
+        <HeaderSigned />
+        {props.children}
+      </div>
     </div>
   )
 }
