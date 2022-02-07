@@ -46,10 +46,9 @@ const HeaderSigned = (props) => {
   }, [currentEndpoint, endpointText])
 
   const toggleSidebar = (e) => {
-    // let sidebarComponent = document.getElementsByClassName(
-    //   'signed-sidebar-component',
-    // )
-    // console.log(sidebarComponent)
+    document
+      .getElementById('sidebar-signed')
+      .classList.toggle('hide-nav-sidebar')
   }
   return (
     <div className="signed-header-container">

@@ -20,18 +20,8 @@ const SideBar = (props) => {
     setCurrentEndpoint(window.location.pathname)
   }, [])
 
-  // console.log(window.location.pathname) /dashboard
-  // switch (window.location.pathname) {
-  //   case "/dashboard":
-  //     document.getElementById('').classList.toggle()
-  //     break;
-
-  //   default:
-  //     break;
-  // }
-
   return (
-    <div>
+    <div id="sidebar-signed" className="hide-nav-sidebar">
       <Container fluid>
         <Row>
           <Col>

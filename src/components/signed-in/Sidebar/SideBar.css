@@ -1,4 +1,9 @@
 /* SIDEBAR MAIN CONTAINER */
+.hide-nav-sidebar {
+  display: none;
+  transition: 2s ease-in-out;
+}
+
 .sidebar-container {
   width: 290px;
 }
@@ -56,4 +61,8 @@
   .sidebar-container {
     width: 330px;
   }
+  /* .hide-nav-sidebar {
+    display: none;
+    transition: 2s ease-in-out;
+  } */
 }
