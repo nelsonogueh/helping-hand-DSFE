@@ -32,9 +32,23 @@
   transition: 0.3s ease-in-out;
 }
 .sidebar-menu-item:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #0e874c;
   transition: 0.3s ease-in-out;
+}
+.sidebar-menu-item a {
+  color: #979797;
+  text-decoration: none;
+}
+.sidebar-menu-item a:hover {
+  color: white;
+  text-decoration: none;
+}
+.sidebar-active > a:hover {
+  color: #fff;
+}
+.sidebar-active > a {
+  color: #fff;
 }
 
 /* RESPONSIVE - TABLET - PC  */
