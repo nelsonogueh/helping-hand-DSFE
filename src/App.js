@@ -2,20 +2,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import './App.css'
-
 import LandingPage from './components/LandingPage/LandingPage'
 import ContainerUnsigned from './components/container/unsigned/ContainerUnsigned'
 import Donation from './components/Donation/Donation'
-// import SideBar from './components/signed-in/Sidebar/SideBar'
 import ContainerSigned from './components/container/signed/ContainerSigned'
 import SignedDonation from './components/signed-in/SignedDonation/SignedDonation'
 import Dashboard from './components/signed-in/Dashboard/Dashboard'
 import SigninContainer from './components/container/sign-up-sign-incontainer/SigninContainer'
 import SignIn from './components/SignIn/SignIn'
-// import SignSideBar from './components/container/sign-up-sign-incontainer/SignSideBar/SignSideBar'
-
-// import SignInContent from './components/container/SignInContent/SignInContent'
-// import SignSideBar from './components/container/sign-up-sign-incontainer/SignSideBar/SignSideBar'
+import Blank from './components/signed-in/Blank/Blank'
+import Request from './components/signed-in/Request/Request'
 
 function App() {
   return (
@@ -47,6 +43,14 @@ function App() {
             }
           />
           <Route
+            path="/login"
+            element={
+              <SigninContainer>
+                <SignIn />
+              </SigninContainer>
+            }
+          />
+          <Route
             path="/dashboard"
             element={
               <ContainerSigned>
@@ -62,14 +66,22 @@ function App() {
               </ContainerSigned>
             }
           />
-
-          {/* <Route path="/login" element={<SignSideBar />} /> */}
           <Route
-            path="/login"
+            path="/request"
             element={
-              <SigninContainer>
-                <SignIn />
-              </SigninContainer>
+              <ContainerSigned>
+                <Request />
+              </ContainerSigned>
+            }
+          />
+          {/* BLANK COMPONENT AS A TEMPLATE FOR CREATING SIGNED IN COMPONENTS */}
+          {/* BLANK COMPONENT AS A TEMPLATE FOR CREATING SIGNED IN COMPONENTS */}
+          <Route
+            path="/blank"
+            element={
+              <ContainerSigned>
+                <Blank />
+              </ContainerSigned>
             }
           />
         </Routes>

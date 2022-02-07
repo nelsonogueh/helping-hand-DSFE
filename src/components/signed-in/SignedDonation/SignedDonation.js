@@ -12,7 +12,7 @@ const SignedDonation = (props) => {
             <section className="donate-section-add-donations">
               <div>
                 <p className="donate-title-paragraph">
-                  We are Glad you are here to help people in Need. <br />
+                  We are glad you are here to help people in need. <br />
                   This is a step towards making our environment a better place
                   to live in
                 </p>
