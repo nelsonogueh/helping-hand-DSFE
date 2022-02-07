@@ -13,18 +13,7 @@ const Request = (props) => {
         <Row>
           <Col>
             <div className="request-container">
-              <div className="request-top-donated-search-container">
-                <div className="request-top-donated-items-text">
-                  <div>Request</div>
-                </div>
-                <div className="request-top-donated-search-container">
-                  <input
-                    type="search"
-                    placeholder="Search items here..."
-                    className="request-top-donated-search-input"
-                  />
-                </div>
-              </div>
+              <div className="request-top-donated-search-container"></div>
               <ul className="request-filter-buttons-container">
                 <li className="request-filter-button request-filter-button-active">
                   Food
@@ -100,7 +89,88 @@ const Request = (props) => {
                     <button className="request-now-btn">Request Now</button>
                   </div>
                 </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
+                <article className="request-listing-item">
+                  <div>
+                    <img src={veges} className="request-listing-img" />
+                  </div>
+                  <div>
+                    <button className="request-now-btn">Request Now</button>
+                  </div>
+                </article>
               </div>
+
+              {/* <div class="wrapper">
+                <div class="box a">A</div>
+                <div class="box b">B</div>
+                <div class="box c">C</div>
+                <div class="box d">D</div>
+                <div class="box e">E</div>
+                <div class="box f">F</div>
+              </div> */}
             </div>
           </Col>
         </Row>
