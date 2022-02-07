@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -14,6 +14,37 @@ import logoWhite from '../../../assets/img/logo-white.png'
 
 const HeaderSigned = (props) => {
   const iconSize = 25
+
+  const [currentEndpoint, setCurrentEndpoint] = useState('')
+  const [endpointText, setEndpointText] = useState('')
+
+  useEffect(() => {
+    let currentEndpointLocation = window.location.pathname
+    setCurrentEndpoint(currentEndpointLocation)
+
+    switch (currentEndpointLocation) {
+      case '/dashboard' || '/dashboard/':
+        setEndpointText('DASHBOARD')
+        break
+      case '/request' || '/request/':
+        setEndpointText('REQUEST')
+        break
+      case '/donation' || '/donation/':
+        setEndpointText('DONATION')
+        break
+      case '/raffledraw' || '/raffledraw/':
+        setEndpointText('RAFFLE DRAW')
+        break
+      case '/support' || '/support/':
+        setEndpointText('SUPPORT')
+        break
+
+      default:
+        setEndpointText('')
+        break
+    }
+  }, [currentEndpoint, endpointText])
+
   const toggleSidebar = (e) => {
     // let sidebarComponent = document.getElementsByClassName(
     //   'signed-sidebar-component',
@@ -28,13 +59,13 @@ const HeaderSigned = (props) => {
           onClick={toggleSidebar}
           size={iconSize}
         />
-        <div>DASHBOARD</div>
+        <div>{endpointText}</div>
       </div>
       <div className="signed-profile-icon-container">
         <ImCart className="signed-header-icon" size={iconSize} />
         <IoNotificationsSharp className="signed-header-icon" size={iconSize} />
         <FaRegUserCircle className="signed-header-icon-3" size={iconSize} />
-        <AiOutlineCaretDown className='signed-header-icon-caret' size={14} />
+        <AiOutlineCaretDown className="signed-header-icon-caret" size={14} />
       </div>
     </div>
   )

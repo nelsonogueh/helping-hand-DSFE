@@ -9,7 +9,7 @@ import veges from '../../../assets/img/veges.png'
 const Request = (props) => {
   return (
     <div>
-      <Container fluid className="content-main-container">
+      <Container fluid className="request-content-main-container">
         <Row>
           <Col>
             <div className="request-container">

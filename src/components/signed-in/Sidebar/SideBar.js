@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
@@ -13,6 +13,12 @@ import logoWhite from '../../../assets/img/logo-white.png'
 
 const SideBar = (props) => {
   const iconSize = 25
+
+  const [currentEndpoint, setCurrentEndpoint] = useState('')
+
+  useEffect(() => {
+    setCurrentEndpoint(window.location.pathname)
+  }, [])
 
   // console.log(window.location.pathname) /dashboard
   // switch (window.location.pathname) {
@@ -37,49 +43,74 @@ const SideBar = (props) => {
               <div className="sidebar-menu-item-container">
                 <ul className="sidebar-ul">
                   <li
-                    as
-                    Link
-                    to="/dashboard"
                     id="link-dashboard"
-                    className="sidebar-menu-item"
+                    className={`sidebar-menu-item 
+                    ${
+                      (currentEndpoint === '/dashboard' ||
+                        currentEndpoint === '/dashboard/') &&
+                      'sidebar-active'
+                    }
+                    `}
                   >
-                    <MdDashboard size={iconSize} /> Dashboard
+                    <a href="/dashboard">
+                      <MdDashboard size={iconSize} /> Dashboard
+                    </a>
                   </li>
                   <li
                     id="link-request"
-                    as
-                    Link
-                    to="/requests"
-                    className="sidebar-menu-item sidebar-active"
+                    className={`sidebar-menu-item 
+                    ${
+                      (currentEndpoint === '/request' ||
+                        currentEndpoint === '/request/') &&
+                      'sidebar-active'
+                    }
+                    `}
                   >
-                    <FiSend size={iconSize} /> Request
+                    <a href="/request">
+                      <FiSend size={iconSize} /> Request
+                    </a>
                   </li>
                   <li
-                    as
-                    Link
-                    to="/donations"
                     id="link-donation"
-                    className="sidebar-menu-item"
+                    className={`sidebar-menu-item 
+                    ${
+                      (currentEndpoint === '/donation' ||
+                        currentEndpoint === '/donation/') &&
+                      'sidebar-active'
+                    }
+                    `}
                   >
-                    <BiDonateHeart size={iconSize} /> Donations
+                    <a href="/donation">
+                      <BiDonateHeart size={iconSize} /> Donations
+                    </a>
                   </li>
                   <li
-                    as
-                    Link
-                    to="/raffledraw"
                     id="link-raffledraw"
-                    className="sidebar-menu-item"
+                    className={`sidebar-menu-item 
+                    ${
+                      (currentEndpoint === '/raffledraw' ||
+                        currentEndpoint === '/raffledraw/') &&
+                      'sidebar-active'
+                    }
+                    `}
                   >
-                    <IoTicketOutline size={iconSize} /> Raffle Draw
+                    <a href="/raffledraw">
+                      <IoTicketOutline size={iconSize} /> Raffle Draw
+                    </a>
                   </li>
                   <li
-                    as
-                    Link
-                    to="/support"
                     id="link-support"
-                    className="sidebar-menu-item"
+                    className={`sidebar-menu-item 
+                    ${
+                      (currentEndpoint === '/support' ||
+                        currentEndpoint === '/support/') &&
+                      'sidebar-active'
+                    }
+                    `}
                   >
-                    <BiSupport size={iconSize} /> Support
+                    <a href="/support">
+                      <BiSupport size={iconSize} /> Support
+                    </a>
                   </li>
                 </ul>
               </div>
