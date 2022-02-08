@@ -48,7 +48,7 @@ const LandingPage = (props) => {
               </div>
               <div className="section3-container-right">
                 <h1 className="main-title color-primary ">
-                  Do you have something you don't use?
+                  Have Something To Give Out?
                 </h1>
                 <h1 className="sub-title buttom-margin">
                   Give to people in need today
@@ -78,7 +78,7 @@ const LandingPage = (props) => {
             <section className="section4-container">
               <div className="section4-container-left buttom-margin">
                 <h1 className="main-title color-primary ">
-                  You need something?
+                  In Need Of Something?
                 </h1>
                 <h1 className="sub-title buttom-margin">
                   Your need is right here

@@ -2,14 +2,14 @@ import React from 'react'
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-import './SignIn.css'
+import './Signup.css'
 import signinImage2 from '../../assets/img/login-img2.jpg'
 import signinDesignImg from '../../assets/img/designimage.png'
 import googleSigninImage from '../../assets/img/signin-google.png'
 import outlookSigninImage from '../../assets/img/signin-outlook.png'
 import logoGreen from '../../assets/img/logo.png'
 
-const SignIn = (props) => {
+const Signup = (props) => {
   const iconSize = 25
   const handleFormSubmit = (e) => {}
   return (
@@ -21,14 +21,29 @@ const SignIn = (props) => {
       </div>
 
       <div className="signin-title-container">
-        <h1 className="signin-login-h1">Login</h1>
+        <h1 className="signin-login-h1">Sign up</h1>
         <div className="signin-signup-text">
-          Don't have an account? <a href="/signup">sign up</a>
+          Already have an account? <a href="/login">Login</a>
         </div>
       </div>
       <hr className="signin-hr" />
       <div classNmae="signin-form-container">
         <form className="signin-form" onSubmit={handleFormSubmit}>
+          <div>
+            <div>
+              <label className="signin-form-label" htmlFor="signin-phone-input">
+                Phone{' '}
+              </label>
+            </div>
+            <div>
+              <input
+                className="signin-form-control"
+                type="tel"
+                placeholder="Enter your phone number..."
+                id="signin-phone-input"
+              />
+            </div>
+          </div>
           <div>
             <div>
               <label className="signin-form-label" htmlFor="signin-email-input">
@@ -44,9 +59,13 @@ const SignIn = (props) => {
               />
             </div>
           </div>
+
           <div>
             <div>
-              <label className="signin-form-label" htmlFor="signin-email-input">
+              <label
+                className="signin-form-label"
+                htmlFor="signin-password-input"
+              >
                 Password{' '}
               </label>
             </div>
@@ -59,41 +78,31 @@ const SignIn = (props) => {
               />
             </div>
           </div>
-          <div className="signin-button-container">
-            <div className="signin-forgot-password-container">
-              <input
-                className="signin-checkbox"
-                type="checkbox"
-                id="signin-checkbox"
-                value="true"
-              />
-              <label htmlFor="signin-checkbox" className="signin-form-label">
-                {' '}
-                Remember me
+          <div>
+            <div>
+              <label
+                className="signin-form-label"
+                htmlFor="signin-confirm-password-input"
+              >
+                Confirm Password{' '}
               </label>
-              <div className="signin-signup-text signin-form-label">
-                Forgot password? <a href="/forgot-password">click here</a>
-              </div>
             </div>
             <div>
-              <button className="signin-button">
-                <Link className="signin-form-link" to="/dashboard">
-                  LOGIN
-                </Link>
-              </button>
+              <input
+                className="signin-form-control"
+                type="password"
+                placeholder="Confirm your password..."
+                id="signin-confirm-password-input"
+              />
             </div>
           </div>
-          <div>
-            <hr />
-            <div className="signin-or">
-              <span>OR</span>
-            </div>
-
-            <div className="signin-google">
-              LOGIN WITH &nbsp; <img src={googleSigninImage} />
-            </div>
-            <div className="signin-google">
-              LOGIN WITH &nbsp; <img src={outlookSigninImage} />
+          <div className="signin-button-container">
+            <div className="signin-forgot-password-container">
+              <button className="signin-button">
+                <Link className="signin-form-link" to="/dashboard">
+                  Sign up
+                </Link>
+              </button>
             </div>
           </div>
         </form>
@@ -102,4 +111,4 @@ const SignIn = (props) => {
   )
 }
 
-export default SignIn
+export default Signup

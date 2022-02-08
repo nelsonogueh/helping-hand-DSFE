@@ -153,24 +153,16 @@ const Request = (props) => {
                     <button className="request-now-btn">Request Now</button>
                   </div>
                 </article>
-                <article className="request-listing-item">
-                  <div>
-                    <img src={veges} className="request-listing-img" />
-                  </div>
-                  <div>
-                    <button className="request-now-btn">Request Now</button>
-                  </div>
-                </article>
               </div>
-
-              {/* <div class="wrapper">
-                <div class="box a">A</div>
-                <div class="box b">B</div>
-                <div class="box c">C</div>
-                <div class="box d">D</div>
-                <div class="box e">E</div>
-                <div class="box f">F</div>
-              </div> */}
+              <div className="request-pagination-container">
+                <div className="pagination-item">&lt;&lt;</div>
+                <div className="pagination-item pagination-item-active">1</div>
+                <div className="pagination-item">2</div>
+                <div className="pagination-item">3</div>
+                <div className="pagination-item">. . .</div>
+                <div className="pagination-item">50</div>
+                <div className="pagination-item">&gt;&gt;</div>
+              </div>
             </div>
           </Col>
         </Row>

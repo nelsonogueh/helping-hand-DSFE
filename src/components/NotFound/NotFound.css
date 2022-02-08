@@ -1,0 +1,7 @@
+.notfound-sub-text a {
+  text-decoration: none;
+  color: #0e874c;
+}
+.notfound-sub-text a:hover {
+  text-decoration: underline;
+}

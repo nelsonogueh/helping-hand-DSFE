@@ -14,6 +14,13 @@ const Footer = (props) => {
       <Container className="newsletter-section" fluid>
         <Row>
           <Col>
+            <div className="newsletter-text-container">
+              <h2>Subscribe To Our Newsletter</h2>
+              <p>
+                Please enter your email address below to subscribe to our
+                newsletter so you don't miss out on important information.
+              </p>
+            </div>
             <div className="newsletter-content-container">
               <div className="footer-logo-container">
                 <img className="footer-logo" src={logoWhite} />
@@ -40,7 +47,7 @@ const Footer = (props) => {
                 <h1>About Us</h1>
                 <ul>
                   <li>
-                    <a href="#">About Helping Hands</a>
+                    <a href="/about-us">About Us</a>
                   </li>
                   <li>
                     <a href="/donate">Donations</a>

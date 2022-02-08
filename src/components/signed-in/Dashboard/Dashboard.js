@@ -17,9 +17,9 @@ const Dashboard = (props) => {
               <div className="dashboard-report-container">
                 <div className="dashboard-summary-item">
                   <div className="dashboard-no-request-container">
-                    No. of request per month
+                    Avg. no. of request per month
                   </div>
-                  <div className="dashboard-summary-counter-text">5</div>
+                  <div className="dashboard-summary-counter-text">40</div>
                   <div className="dashboard-view-detail-link">
                     <a href="#">View details</a>
                   </div>
@@ -29,7 +29,7 @@ const Dashboard = (props) => {
                   <div className="dashboard-no-request-container">
                     Total items requested
                   </div>
-                  <div className="dashboard-summary-counter-text">3</div>
+                  <div className="dashboard-summary-counter-text">52</div>
                   <div className="dashboard-view-detail-link">
                     <a href="#">View details</a>
                   </div>
@@ -37,9 +37,9 @@ const Dashboard = (props) => {
                 <hr className="dashboard-summary-hr" />
                 <div className="dashboard-summary-item">
                   <div className="dashboard-no-request-container">
-                    Total items donated
+                    Total items donated this month
                   </div>
-                  <div className="dashboard-summary-counter-text">0</div>
+                  <div className="dashboard-summary-counter-text">35</div>
                   <div className="dashboard-view-detail-link">
                     <a href="#">View details</a>
                   </div>

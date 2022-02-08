@@ -1,0 +1,141 @@
+.signin-login-h1 {
+  color: #0e874c;
+}
+.signin-form {
+  padding: 30px 0px 0px 0px;
+  max-width: 100%;
+}
+.signin-form-label {
+  color: #878787;
+}
+
+.signin-form-control {
+  padding: 18px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.signin-signup-text a {
+  color: #0e874c;
+  font-weight: 600;
+  text-decoration: none;
+}
+.signin-signup-text a:hover {
+  text-decoration: underline;
+}
+.signin-button {
+  background-color: #0e874c;
+  border: none;
+  padding: 15px 40px;
+  color: #fff;
+  border-radius: 5px;
+}
+.signin-button:hover {
+  background-color: #07502d;
+  transition: 0.3s ease-in-out;
+}
+.signin-forgot-password-container {
+  flex-grow: 1;
+}
+.signin-checkbox {
+  margin-right: 10px;
+}
+
+.signin-google {
+  color: #878787;
+  text-align: center;
+  background-color: #f5fffa;
+  border: 2px solid #0e874c;
+  border-radius: 5px;
+  margin: 20px 0px;
+  width: 100%;
+  cursor: pointer;
+}
+.signin-or {
+  text-align: center;
+  position: relative;
+  top: -28px;
+}
+.signin-or span {
+  background-color: #fff;
+  width: 60px;
+  padding: 5px 20px;
+}
+.signin-form-link {
+  color: #fff;
+  text-decoration: none;
+}
+.signin-form-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.signin-forgot-password-container {
+  margin-bottom: 20px;
+}
+
+.signin-logo-img {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE - TABLET - PC  */
+@media (min-width: 641px) {
+  .content-image-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .signin-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .signin-main-content-container {
+    padding: 10px 50px;
+    width: 100%;
+  }
+  .signin-login-h1 {
+    flex-grow: 1;
+  }
+
+  .signin-button-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .signin-form-control {
+    padding: 18px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 500px;
+  }
+
+  .signin-google {
+    color: #878787;
+    text-align: center;
+    background-color: #f5fffa;
+    border: 2px solid #0e874c;
+    border-radius: 5px;
+    margin: 20px 0px;
+    width: 500px;
+  }
+  .signin-or {
+    text-align: center;
+    position: relative;
+    top: -28px;
+  }
+  .signin-or span {
+    background-color: #fff;
+    width: 60px;
+    padding: 5px 20px;
+  }
+  .signin-form {
+    padding: 40px 0px;
+    max-width: 500px;
+  }
+}

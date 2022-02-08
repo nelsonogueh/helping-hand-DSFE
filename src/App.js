@@ -12,6 +12,10 @@ import SigninContainer from './components/container/sign-up-sign-incontainer/Sig
 import SignIn from './components/SignIn/SignIn'
 import Blank from './components/signed-in/Blank/Blank'
 import Request from './components/signed-in/Request/Request'
+import Signup from './components/SignUp/Signup'
+import NotFound from './components/NotFound/NotFound'
+import RaffleDraw from './components/signed-in/RaffleDraw/RaffleDraw'
+import Support from './components/signed-in/Support/Support'
 
 function App() {
   return (
@@ -22,12 +26,20 @@ function App() {
             path="*"
             element={
               <ContainerUnsigned>
-                <LandingPage />
+                <NotFound />
               </ContainerUnsigned>
             }
           />
           <Route
             path=""
+            element={
+              <ContainerUnsigned>
+                <LandingPage />
+              </ContainerUnsigned>
+            }
+          />
+          <Route
+            path="/"
             element={
               <ContainerUnsigned>
                 <LandingPage />
@@ -47,6 +59,14 @@ function App() {
             element={
               <SigninContainer>
                 <SignIn />
+              </SigninContainer>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <SigninContainer>
+                <Signup />
               </SigninContainer>
             }
           />
@@ -71,6 +91,22 @@ function App() {
             element={
               <ContainerSigned>
                 <Request />
+              </ContainerSigned>
+            }
+          />
+          <Route
+            path="/raffledraw"
+            element={
+              <ContainerSigned>
+                <RaffleDraw />
+              </ContainerSigned>
+            }
+          />
+          <Route
+            path="/support"
+            element={
+              <ContainerSigned>
+                <Support />
               </ContainerSigned>
             }
           />

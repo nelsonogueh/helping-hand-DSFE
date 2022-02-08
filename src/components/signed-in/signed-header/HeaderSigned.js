@@ -17,6 +17,7 @@ const HeaderSigned = (props) => {
 
   const [currentEndpoint, setCurrentEndpoint] = useState('')
   const [endpointText, setEndpointText] = useState('')
+  const [navbarVisible, setNavbarVisible] = useState(false)
 
   useEffect(() => {
     let currentEndpointLocation = window.location.pathname
@@ -46,9 +47,17 @@ const HeaderSigned = (props) => {
   }, [currentEndpoint, endpointText])
 
   const toggleSidebar = (e) => {
-    document
-      .getElementById('sidebar-signed')
-      .classList.toggle('hide-nav-sidebar')
+    if (navbarVisible) {
+      document
+        .getElementById('sidebar-signed')
+        .classList.remove('hide-nav-sidebar')
+    } else {
+      document
+        .getElementById('sidebar-signed')
+        .classList.add('hide-nav-sidebar')
+    }
+
+    setNavbarVisible(!navbarVisible)
   }
   return (
     <div className="signed-header-container">
