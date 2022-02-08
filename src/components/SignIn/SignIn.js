@@ -10,6 +10,7 @@ import outlookSigninImage from '../../assets/img/signin-outlook.png'
 import logoGreen from '../../assets/img/logo.png'
 
 const SignIn = (props) => {
+  document.title = 'LOGIN | DAR'
   const iconSize = 25
   let navigate = useNavigate()
 

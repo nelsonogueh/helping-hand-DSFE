@@ -7,6 +7,7 @@ import fruit from '../../assets/img/fruit.png'
 import logoWhite from '../../assets/img/logo-white.png'
 
 const LandingPage = (props) => {
+  document.title = "Welcome to DAR"
   return (
     <div>
       <Container fluid>

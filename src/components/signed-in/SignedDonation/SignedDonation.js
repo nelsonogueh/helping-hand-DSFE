@@ -4,6 +4,7 @@ import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 import './SignedDonation.css'
 
 const SignedDonation = (props) => {
+  document.title = 'Donation | DAR'
   return (
     <div>
       <Container fluid className="donation-main-container">

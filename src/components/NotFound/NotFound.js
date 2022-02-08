@@ -5,6 +5,7 @@ import './NotFound.css'
 import donation from '../../assets/img/donation.png'
 
 const NotFound = (props) => {
+  document.title = 'ERROR 404 - NOT FOUND | DAR'
   return (
     <div>
       <Container fluid>

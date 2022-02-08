@@ -8,6 +8,7 @@ import shoes from '../../../assets/img/shoes-img.jpg'
 import others from '../../../assets/img/others-img.jpg'
 
 const Dashboard = (props) => {
+  document.title = 'Dashboard | DAR'
   return (
     <div>
       <Container fluid className="content-main-container">
