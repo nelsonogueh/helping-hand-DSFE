@@ -118,6 +118,7 @@
 @media (min-width: 641px) {
   /* TABLET */
   .section1-content-container {
+
     width: 500px;
     text-align: center;
   }
