@@ -36,7 +36,7 @@ const Request = (props) => {
                     <img src={image1} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
                 <article className="request-listing-item">
@@ -44,7 +44,7 @@ const Request = (props) => {
                     <img src={image2} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
                 <article className="request-listing-item">
@@ -52,7 +52,7 @@ const Request = (props) => {
                     <img src={image3} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
                 <article className="request-listing-item">
@@ -60,7 +60,7 @@ const Request = (props) => {
                     <img src={image4} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
                 <article className="request-listing-item request-item-first-child">
@@ -68,7 +68,7 @@ const Request = (props) => {
                     <img src={image5} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
                 <article className="request-listing-item">
@@ -76,7 +76,7 @@ const Request = (props) => {
                     <img src={image1} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
                 <article className="request-listing-item">
@@ -84,7 +84,7 @@ const Request = (props) => {
                     <img src={image2} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
                 <article className="request-listing-item">
@@ -92,7 +92,7 @@ const Request = (props) => {
                     <img src={image3} className="request-listing-img" />
                   </div>
                   <div>
-                    <button className="request-now-btn">Request Now</button>
+                    <button className="request-now-btn">Add To Cart</button>
                   </div>
                 </article>
               </div>
