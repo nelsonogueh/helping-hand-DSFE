@@ -18,13 +18,8 @@
   background-color: #07502d;
   transition: 0.3s ease-in-out;
 }
-.raffledraw-spin-image {
-  width: 100%;
-}
-.raffledraw-spin-image-container {
-  max-width: 300px;
-  margin-bottom: 50px;
-}
+
+
 .raffledraw-title-text {
   color: #0e874c;
   font-weight: 700;
@@ -42,14 +37,7 @@
   .raffledraw-content-main-container {
     padding: 0px 50px;
   }
-  .raffledraw-spin-image {
-    width: 100%;
-  }
-  .raffledraw-spin-image-container {
-    width: 450px;
-    max-width: 450px;
-    margin-bottom: 50px;
-  }
+
   .contribute-description-text {
     color: rgb(141, 141, 141);
     margin-bottom: 30px;
