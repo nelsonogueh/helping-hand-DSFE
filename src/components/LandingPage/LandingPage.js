@@ -19,7 +19,7 @@ const LandingPage = (props) => {
                   What are you in <span>NEED</span> of?
                 </h1>
                 <h1 className="section1-content-h2">
-                  Request for it and it shall be given to you{' '}
+                  There is a helping hand reaching out to you today{' '}
                 </h1>
                 <a href="/login">
                   <button className="primary-button section1-primary-button ">

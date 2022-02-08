@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import LandingPage from './components/LandingPage/LandingPage'
-// import Donation from './components/Donation/Donation'
 import ContainerUnsigned from './components/container/unsigned/ContainerUnsigned'
 import Donation from './components/Donation/Donation'
 import SideBar from './components/signed-in/Sidebar/SideBar'
