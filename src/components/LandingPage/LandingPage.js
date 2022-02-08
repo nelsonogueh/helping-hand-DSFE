@@ -7,6 +7,7 @@ import fruit from '../../assets/img/fruit.png'
 import logoWhite from '../../assets/img/logo-white.png'
 
 const LandingPage = (props) => {
+  document.title = "Welcome to DAR"
   return (
     <div>
       <Container fluid>
@@ -16,7 +17,7 @@ const LandingPage = (props) => {
             <section className="section1-container">
               <div className="section1-content-container">
                 <h1 className="section1-content-h1">
-                  What are you in <span>NEED</span> of?
+                  What do you <span>NEED?</span>
                 </h1>
                 <h1 className="section1-content-h2">
                   There is a helping hand reaching out to you today{' '}
@@ -24,6 +25,11 @@ const LandingPage = (props) => {
                 <a href="/login">
                   <button className="primary-button section1-primary-button ">
                     REQUEST{' '}
+                  </button>
+                </a>
+                <a href="#">
+                  <button className="secondary-button section1-primary-button ">
+                    LEARN MORE{' '}
                   </button>
                 </a>
               </div>
@@ -43,7 +49,7 @@ const LandingPage = (props) => {
               </div>
               <div className="section3-container-right">
                 <h1 className="main-title color-primary ">
-                  Do you have something you don't use?
+                  Have Something To Give Out?
                 </h1>
                 <h1 className="sub-title buttom-margin">
                   Give to people in need today
@@ -73,7 +79,7 @@ const LandingPage = (props) => {
             <section className="section4-container">
               <div className="section4-container-left buttom-margin">
                 <h1 className="main-title color-primary ">
-                  You need something?
+                  In Need Of Something?
                 </h1>
                 <h1 className="sub-title buttom-margin">
                   Your need is right here

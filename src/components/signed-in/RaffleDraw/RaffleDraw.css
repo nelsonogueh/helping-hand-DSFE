@@ -1,0 +1,59 @@
+/* RESPONSIVE - TABLET - PC  */
+
+.raffledraw-spin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.raffledraw-spin-btn {
+  background-color: #0e874c;
+  border: none;
+  padding: 15px 60px;
+  color: #fff;
+  border-radius: 5px;
+}
+.raffledraw-spin-btn:hover {
+  background-color: #07502d;
+  transition: 0.3s ease-in-out;
+}
+.raffledraw-spin-image {
+  width: 100%;
+}
+.raffledraw-spin-image-container {
+  max-width: 300px;
+  margin-bottom: 50px;
+}
+.raffledraw-title-text {
+  color: #0e874c;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.raffledraw-description-text {
+  color: rgb(141, 141, 141);
+  margin-bottom: 30px;
+  min-width: 300px;
+  width: 400px;
+  text-align: center;
+}
+
+@media (min-width: 641px) {
+  .raffledraw-content-main-container {
+    padding: 0px 50px;
+  }
+  .raffledraw-spin-image {
+    width: 100%;
+  }
+  .raffledraw-spin-image-container {
+    width: 350px;
+    max-width: 350px;
+    margin-bottom: 50px;
+  }
+  .raffledraw-description-text {
+    color: rgb(141, 141, 141);
+    margin-bottom: 30px;
+    max-width: 500px;
+    width: 450px;
+  }
+}

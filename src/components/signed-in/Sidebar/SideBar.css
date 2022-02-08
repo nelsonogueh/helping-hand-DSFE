@@ -1,4 +1,9 @@
 /* SIDEBAR MAIN CONTAINER */
+.hide-nav-sidebar {
+  display: none;
+  transition: 2s ease-in-out;
+}
+
 .sidebar-container {
   width: 290px;
 }
@@ -32,9 +37,23 @@
   transition: 0.3s ease-in-out;
 }
 .sidebar-menu-item:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #0e874c;
   transition: 0.3s ease-in-out;
+}
+.sidebar-menu-item a {
+  color: #979797;
+  text-decoration: none;
+}
+.sidebar-menu-item a:hover {
+  color: white;
+  text-decoration: none;
+}
+.sidebar-active > a:hover {
+  color: #fff;
+}
+.sidebar-active > a {
+  color: #fff;
 }
 
 /* RESPONSIVE - TABLET - PC  */
@@ -42,4 +61,8 @@
   .sidebar-container {
     width: 330px;
   }
+  /* .hide-nav-sidebar {
+    display: none;
+    transition: 2s ease-in-out;
+  } */
 }

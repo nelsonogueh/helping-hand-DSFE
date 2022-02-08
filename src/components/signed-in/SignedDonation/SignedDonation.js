@@ -1,13 +1,10 @@
 import React from 'react'
 import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 
-import donation from '../../assets/img/donation.png'
-import fruit from '../../assets/img/fruit.png'
-import logoWhite from '../../assets/img/logo-white.png'
+import './SignedDonation.css'
 
-import './Donation.css'
-
-const Donation = (props) => {
+const SignedDonation = (props) => {
+  document.title = 'Donation | DAR'
   return (
     <div>
       <Container fluid className="donation-main-container">
@@ -15,7 +12,6 @@ const Donation = (props) => {
           <Col>
             <section className="donate-section-add-donations">
               <div>
-                <h1 className="donate-title-h1">LET'S GET STARTED</h1>
                 <p className="donate-title-paragraph">
                   We are glad you are here to help people in need. <br />
                   This is a step towards making our environment a better place
@@ -32,51 +28,7 @@ const Donation = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col md={4} className="donate-user-info-form-container">
-            <form className="donate-user-info-form">
-              <h2>Kindly fill in your Information</h2>
-              <div>
-                <label className="user-detail-name" htmlFor="user-detail-name">
-                  Name
-                </label>
-              </div>
-              <div>
-                <input
-                  className="user-detail-input"
-                  type="text"
-                  id="user-detail-name"
-                  placeholder="Enter your name..."
-                />
-              </div>
-              <div>
-                <label className="user-detail-name" htmlFor="user-detail-email">
-                  Email
-                </label>
-              </div>
-              <div>
-                <input
-                  className="user-detail-input"
-                  type="email"
-                  id="user-detail-email"
-                  placeholder="Enter your email..."
-                />
-              </div>
-              <div>
-                <label className="user-detail-name" htmlFor="user-detail-name">
-                  Phone
-                </label>
-              </div>
-              <div>
-                <input
-                  className="user-detail-input"
-                  type="tel"
-                  id="user-detail-phone"
-                  placeholder="Enter your phone number..."
-                />
-              </div>
-            </form>
-          </Col>
-          <Col>
+          <Col md={8}>
             <form className="donate-user-info-form">
               <h2>Donation</h2>
               <div>
@@ -118,4 +70,4 @@ const Donation = (props) => {
   )
 }
 
-export default Donation
+export default SignedDonation

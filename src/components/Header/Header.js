@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 
-
 import './Header.css'
 import logo from '../../assets/img/logo.png'
 
@@ -27,7 +26,11 @@ const Header = (props) => {
             <Nav.Link className="menu-nav-item" href="/">
               HOME
             </Nav.Link>
-            <Nav.Link className="menu-nav-item" href="/contribute">
+            <Nav.Link
+              className="menu-nav-item"
+              target="_blank"
+              href="https://paystack.com/pay/dar-donation"
+            >
               CONTRIBUTE
             </Nav.Link>
             <Nav.Link className="menu-nav-item" href="/about-us">

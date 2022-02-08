@@ -1,15 +1,4 @@
-/* SIDEBAR MAIN CONTAINER */
-.signin-main-content-container {
-  padding: 30px;
-}
-
-.signin-sidebar-img {
-  display: none;
-}
-.signin-design-img {
-  width: 100%;
-}
-/* .signin-login-h1 {
+.signin-login-h1 {
   color: #0e874c;
 }
 .signin-form {
@@ -46,10 +35,6 @@
 }
 .signin-button:hover {
   background-color: #07502d;
-  border: none;
-  padding: 15px 40px;
-  color: #fff;
-  border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
 .signin-forgot-password-container {
@@ -94,30 +79,21 @@
 .signin-logo-img {
   max-height: 50px;
   margin-bottom: 20px;
-} */
+}
 
 /* RESPONSIVE - TABLET - PC  */
 @media (min-width: 641px) {
-  .signin-sidebar-img {
-    display: block;
-  }
-  .signin-sidebar-img {
-    max-width: 430px;
-  }
-  .signin-design-img {
-    width: calc(100vw - 15px);
-  }
-  /* .content-image-container {
+  .content-image-container {
     display: flex;
     flex-direction: row;
-  } */
-  /* .signin-title-container {
+  }
+  .signin-title-container {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
   .signin-main-content-container {
-    padding: 50px;
+    padding: 10px 50px;
     width: 100%;
   }
   .signin-login-h1 {
@@ -161,5 +137,5 @@
   .signin-form {
     padding: 40px 0px;
     max-width: 500px;
-  } */
+  }
 }
