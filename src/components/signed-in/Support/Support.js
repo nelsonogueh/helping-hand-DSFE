@@ -4,6 +4,7 @@ import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
 import './Support.css'
 
 const Support = (props) => {
+  document.title = "Support | DAR"
   const handleSupportFormSubmit = (e) => {}
   return (
     <div>

@@ -5,6 +5,7 @@ import './RaffleDraw.css'
 import spinImage from '../../../assets/img/spinner.png'
 
 const RaffleDraw = (props) => {
+  document.title = 'Raffle Draw | DAR'
   return (
     <div>
       <Container fluid className="raffledraw-content-main-container">

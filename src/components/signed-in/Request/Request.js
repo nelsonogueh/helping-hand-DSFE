@@ -11,6 +11,7 @@ import image4 from '../../../assets/img/donations/shoes.png'
 import image5 from '../../../assets/img/donations/tablet.png'
 
 const Request = (props) => {
+  document.title = "Request | DAR"
   return (
     <div>
       <Container fluid className="request-content-main-container">

@@ -10,6 +10,8 @@ import outlookSigninImage from '../../assets/img/signin-outlook.png'
 import logoGreen from '../../assets/img/logo.png'
 
 const Signup = (props) => {
+  document.title = 'SIGN UP | DAR'
+
   const iconSize = 25
   const handleFormSubmit = (e) => {}
   return (
