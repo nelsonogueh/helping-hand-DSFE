@@ -39,6 +39,9 @@ const HeaderSigned = (props) => {
       case '/support' || '/support/':
         setEndpointText('SUPPORT')
         break
+      case '/contribute' || '/contribute/':
+        setEndpointText('CONTRIBUTE')
+        break
 
       default:
         setEndpointText('')
