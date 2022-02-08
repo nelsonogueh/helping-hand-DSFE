@@ -21,14 +21,16 @@ const SideBar = (props) => {
   }, [])
 
   return (
-    <div id="sidebar-signed" >
+    <div id="sidebar-signed">
       <Container fluid>
         <Row>
           <Col>
             {' '}
             <section className="sidebar-container">
               <div className="sidebar-logo-container">
-                <img src={logoWhite} alt="" className="sidebar-logo-img" />{' '}
+                <a href="/dashboard">
+                  <img src={logoWhite} alt="" className="sidebar-logo-img" />{' '}
+                </a>
               </div>
               <div className="sidebar-menu-item-container">
                 <ul className="sidebar-ul">

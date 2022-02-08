@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar, Container, Nav, Row, Col } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import './SignIn.css'
 import signinImage2 from '../../assets/img/login-img2.jpg'
@@ -11,7 +11,13 @@ import logoGreen from '../../assets/img/logo.png'
 
 const SignIn = (props) => {
   const iconSize = 25
-  const handleFormSubmit = (e) => {}
+  let navigate = useNavigate()
+
+  const handleFormSubmit = (e) => {
+    // const history = useHistory();
+    // history.push('/dashboard')
+    navigate('/dashboard', { replace: true })
+  }
   return (
     <div className="signin-main-content-container">
       <div>
