@@ -21,7 +21,7 @@ const SideBar = (props) => {
   }, [])
 
   return (
-    <div id="sidebar-signed" className="hide-nav-sidebar">
+    <div id="sidebar-signed" >
       <Container fluid>
         <Row>
           <Col>

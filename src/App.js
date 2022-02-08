@@ -12,6 +12,8 @@ import SigninContainer from './components/container/sign-up-sign-incontainer/Sig
 import SignIn from './components/SignIn/SignIn'
 import Blank from './components/signed-in/Blank/Blank'
 import Request from './components/signed-in/Request/Request'
+import Signup from './components/SignUp/Signup'
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
   return (
@@ -22,12 +24,20 @@ function App() {
             path="*"
             element={
               <ContainerUnsigned>
-                <LandingPage />
+                <NotFound />
               </ContainerUnsigned>
             }
           />
           <Route
             path=""
+            element={
+              <ContainerUnsigned>
+                <LandingPage />
+              </ContainerUnsigned>
+            }
+          />
+          <Route
+            path="/"
             element={
               <ContainerUnsigned>
                 <LandingPage />
@@ -47,6 +57,14 @@ function App() {
             element={
               <SigninContainer>
                 <SignIn />
+              </SigninContainer>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <SigninContainer>
+                <Signup />
               </SigninContainer>
             }
           />

@@ -1,0 +1,6 @@
+/* RESPONSIVE - TABLET - PC  */
+@media (min-width: 641px) {
+  .content-main-container {
+    padding: 0px 50px;
+  }
+}

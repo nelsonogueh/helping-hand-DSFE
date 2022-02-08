@@ -8,14 +8,19 @@
 }
 .newsletter-section {
   background-color: #109756;
+  padding: 20px;
 }
 .newsletter-content-container {
-  min-height: 150px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
+}
+.newsletter-text-container {
+  text-align: center;
+  color: white;
 }
 
 .footer-logo-container {
@@ -92,12 +97,12 @@
 /* RESPONSIVENESS -  FOR TABLET DEVICES */
 @media (min-width: 641px) {
   .newsletter-content-container {
-    min-height: 150px;
+    min-height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 0px 20px;
   }
   .footer-logo-container {
     margin-right: 30px;
