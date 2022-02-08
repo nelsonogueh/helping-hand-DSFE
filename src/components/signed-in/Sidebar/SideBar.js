@@ -7,6 +7,7 @@ import { MdDashboard } from 'react-icons/md'
 import { FiSend } from 'react-icons/fi'
 import { BiDonateHeart, BiSupport } from 'react-icons/bi'
 import { IoTicketOutline } from 'react-icons/io5'
+import { BsCreditCard2Back } from 'react-icons/bs'
 
 import './SideBar.css'
 import logoWhite from '../../../assets/img/logo-white.png'
@@ -102,6 +103,19 @@ const SideBar = (props) => {
                   >
                     <a href="/support">
                       <BiSupport size={iconSize} /> Support
+                    </a>
+                  </li>
+                  <li
+                    id="link-support"
+                    className={`sidebar-menu-item 
+                    
+                    `}
+                  >
+                    <a
+                      target="_blank"
+                      href="https://paystack.com/pay/dar-donation"
+                    >
+                      <BsCreditCard2Back size={iconSize} /> Contribute
                     </a>
                   </li>
                 </ul>
