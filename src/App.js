@@ -16,6 +16,7 @@ import Signup from './components/SignUp/Signup'
 import NotFound from './components/NotFound/NotFound'
 import RaffleDraw from './components/signed-in/RaffleDraw/RaffleDraw'
 import Support from './components/signed-in/Support/Support'
+import Contribute from './components/signed-in/Contribute/Contribute'
 
 function App() {
   return (
@@ -107,6 +108,14 @@ function App() {
             element={
               <ContainerSigned>
                 <Support />
+              </ContainerSigned>
+            }
+          />
+          <Route
+            path="/contribute"
+            element={
+              <ContainerSigned>
+                <Contribute />
               </ContainerSigned>
             }
           />

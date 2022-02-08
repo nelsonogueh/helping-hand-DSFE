@@ -108,13 +108,14 @@ const SideBar = (props) => {
                   <li
                     id="link-support"
                     className={`sidebar-menu-item 
-                    
+                    ${
+                      (currentEndpoint === '/contribute' ||
+                        currentEndpoint === '/contribute/') &&
+                      'sidebar-active'
+                    }
                     `}
                   >
-                    <a
-                      target="_blank"
-                      href="https://paystack.com/pay/dar-donation"
-                    >
+                    <a href="/contribute">
                       <BsCreditCard2Back size={iconSize} /> Contribute
                     </a>
                   </li>
