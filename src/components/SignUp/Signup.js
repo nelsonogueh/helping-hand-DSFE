@@ -91,7 +91,7 @@ const Signup = (props) => {
               <input
                 className="signin-form-control"
                 type="password"
-                placeholder="Enter your password again..."
+                placeholder="Confirm your password..."
                 id="signin-confirm-password-input"
               />
             </div>

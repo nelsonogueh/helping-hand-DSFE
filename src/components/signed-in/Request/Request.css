@@ -79,6 +79,31 @@
   margin-top: 30px;
   text-align: center;
 }
+.request-pagination-container {
+  display: flex;
+}
+
+.pagination-item {
+  padding: 5px 15px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.pagination-item:hover {
+  background: #0e874c;
+  border: 2px solid #0e874c;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.pagination-item-active {
+  background: #0e874c;
+  border: 2px solid #0e874c;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
 
 /* RESPONSIVE - TABLET - PC  */
 @media (min-width: 641px) {

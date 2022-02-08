@@ -72,7 +72,7 @@ const SignIn = (props) => {
                 Remember me
               </label>
               <div className="signin-signup-text signin-form-label">
-                Forgot password? <a href="/signup">click here</a>
+                Forgot password? <a href="/forgot-password">click here</a>
               </div>
             </div>
             <div>
